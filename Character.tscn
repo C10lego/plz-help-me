@@ -88,7 +88,8 @@ format = 2
 layer_0/tile_data = PackedInt32Array(262144, 1, 0, 262145, 1, 0, 262146, 1, 0, 262147, 1, 0, 262148, 1, 0, 262149, 1, 0, 262150, 1, 0, 262151, 1, 0, 262152, 1, 0)
 
 [node name="CharacterBody2D" type="CharacterBody2D" parent="."]
-position = Vector2(560, 333)
+position = Vector2(573, 430)
+scale = Vector2(4, 4)
 collision_mask = 2
 script = ExtResource("2_gfdul")
 metadata/_edit_group_ = true
@@ -101,3 +102,4 @@ texture = ExtResource("1_68ewh")
 shape = SubResource("RectangleShape2D_wob1b")
 
 [node name="Camera2D" type="Camera2D" parent="CharacterBody2D"]
+scale = Vector2(1.06299, 1.05882)
