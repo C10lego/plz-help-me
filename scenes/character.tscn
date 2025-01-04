@@ -4,18 +4,54 @@
 [ext_resource type="Texture2D" uid="uid://llja3o0vvmse" path="res://icon.svg" id="2_7tt77"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ce862"]
-size = Vector2(26, 26)
+size = Vector2(8, 25.3441)
 
 [node name="Character" type="CharacterBody2D"]
-scale = Vector2(4, 4)
+scale = Vector2(11.151, 10)
 collision_mask = 2
 script = ExtResource("1_f1ao1")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-scale = Vector2(0.203125, 0.203125)
+position = Vector2(0, -10.25)
+scale = Vector2(0.0585938, 0.0585938)
+texture = ExtResource("2_7tt77")
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+position = Vector2(0, -6.25)
+scale = Vector2(0.0117187, 0.0117188)
+texture = ExtResource("2_7tt77")
+
+[node name="Sprite2D3" type="Sprite2D" parent="."]
+position = Vector2(0, -1)
+scale = Vector2(0.046875, 0.078125)
+texture = ExtResource("2_7tt77")
+
+[node name="Sprite2D4" type="Sprite2D" parent="."]
+position = Vector2(3.5, -1)
+rotation = -0.136865
+scale = Vector2(0.00976563, 0.078125)
+texture = ExtResource("2_7tt77")
+
+[node name="Sprite2D7" type="Sprite2D" parent="."]
+position = Vector2(2.5, 8)
+rotation = -0.136865
+scale = Vector2(0.00976563, 0.078125)
+texture = ExtResource("2_7tt77")
+
+[node name="Sprite2D5" type="Sprite2D" parent="."]
+position = Vector2(-3.5, -1)
+rotation = 0.170722
+scale = Vector2(0.00976563, 0.078125)
+texture = ExtResource("2_7tt77")
+
+[node name="Sprite2D6" type="Sprite2D" parent="."]
+position = Vector2(-2.5, 8)
+rotation = 0.170722
+scale = Vector2(0.00976563, 0.078125)
 texture = ExtResource("2_7tt77")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -0.125)
 shape = SubResource("RectangleShape2D_ce862")
 
 [node name="Camera2D" type="Camera2D" parent="."]
